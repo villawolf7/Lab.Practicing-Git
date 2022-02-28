@@ -1,0 +1,15 @@
+html {
+        font-family: Arial, Helvetica, sans-serif; 
+        font-size: 14px;
+      }
+
+      aside {
+        padding: 12px;
+        border: 1px solid #777;
+        background: #ddd;
+        display: table;
+      }
+
+      aside h4 {
+        border-bottom: 1px solid #777;
+      }
