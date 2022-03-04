@@ -1,0 +1,50 @@
+html {
+    height: 100vh;
+    width: 100vw;
+    
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+}
+
+
+.board {
+    display: flex;
+    height: 360px;
+    width: 360px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.cell {
+    border: 5px solid black;
+    display: flex;
+    flex-basis: 90px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 50px;
+
+}
+
+.cell:nth-child(odd):not(:nth-child(5)) {
+    border: none;
+}
+
+.cell:nth-child(n+4):nth-child(-n+6):not(:nth-child(5)) {  
+    border-left: none;
+    border-right: none;
+}
+
+.cell:nth-child(even):not(:nth-child(6)):not(:nth-child(4)){
+    border-top: none;
+    border-bottom: none;
+}
+

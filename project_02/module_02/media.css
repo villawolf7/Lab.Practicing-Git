@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: lightgrey;
+  font-family: arial;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+Header {
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  padding: 1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.logo {
+  font-size: 30px;
+}
+Main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+}
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .hamburger {
+    display: inherit;
+  }
+  nav {
+    display: none;
+  }
+  main {
+    flex-direction: column;
+  }
+}
+.card {
+  background-color: grey;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  margin: 1rem;
+  flex-basis: 18%;
+}
+h3 {
+  background-color: cornflowerblue;
+  padding: 0.5rem;
+}
+.card p {
+  padding: 0.5rem;
+}
+nav a {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: white;
+}
+nav a:visited {
+  color: white;
+}
+Footer {
+  display: flex;
+  background-color: grey;
+  justify-content: center;
+  padding: 0.5rem;
+}
